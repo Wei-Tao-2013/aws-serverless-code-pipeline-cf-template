@@ -38,7 +38,7 @@ Parameters:
 
   GitHubOAuthToken:
     Type: String
-    Default:  57e45a5b3217e3f3e75dfd254773e174e8165a37
+    Default:  ba94bdba0748af8823f620bba1d59021e6671950
     Description:  CodePipeline requires an OAuthToken
 
 Resources:
@@ -151,6 +151,7 @@ Resources:
             - logs:PutLogEvents
             - s3:putObject
             - s3:getObject
+            - 's3:CreateBucket'
             - codebuild:*
           Resource:
             - "*"
