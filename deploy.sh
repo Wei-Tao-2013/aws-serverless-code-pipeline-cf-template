@@ -8,4 +8,5 @@ npm install serverless-dynamodb-local serverless-offline serverless-stack-output
 
 echo "Deploying to $env with codebuild src dir $CODEBUILD_SRC_DIR"
 echo "_______________________________"
-serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v
+ls
+serverless deploy --stage $env --package /artifacts/$env -v
